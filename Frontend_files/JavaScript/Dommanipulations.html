@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="id1">Hello World!</h1>
+    <hr>
+    <p class="class1 class2">
+        Lorem ipsum dolor1 </p>
+    <p class="class2">
+        Lorem ipsum dolor 2</p>
+    <p class="class1">
+        Lorem ipsum dolor3 </p>
+
+   
+
+</body>
+<script>
+    //-----------------innerHTML---------------------
+    // console.log(document.getElementById("id1"))
+    // console.log(document.getElementById("id1").innerHTML)
+
+    //-----------------Tagbased---------------------
+    // let arr = document.getElementsByTagName("p")
+    // console.log(arr)
+    // for (let index = 0; index < arr.length; index++) {
+    //     const element = arr[index];
+    //     console.log(element)
+    //     console.log(element.innerHTML)
+    // }
+    //--------------------classname---------
+    let arr = document.getElementsByClassName("class1")
+    let arr2 = document.getElementsByClassName("class2")
+   
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        console.log(element)
+        console.log(element.innerHTML)
+
+    }
+    for (let index = 0; index < arr2.length; index++) {
+        const element = arr[index].innerHTML;
+        console.log(element)
+    }
+
+
+</script>
+
+</html>

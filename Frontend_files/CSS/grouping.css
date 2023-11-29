@@ -1,0 +1,34 @@
+#s1{
+    color:blue;
+}
+#s2{
+    color:crimson;
+}
+.c1{
+    font-family: fantasy;
+}
+body{
+    background-color: rgb(123, 160, 85);
+}
+hr{
+    height: 5px;
+    background-color: black;
+}
+h3,h4{
+    font-family: cursive;
+}
+#s2,h3{
+    text-decoration: dotted;
+}
+.c1,s1{
+    text-align: center;
+}
+.c1,s1,h1{
+    text-shadow: 2px 2px;
+}
+.h7{
+    text-decoration: dotted;
+}
+.h6{
+    text-align: center;
+}

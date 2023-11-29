@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+#header{
+    display:flex;
+    height: 80px;
+    position: fixed;
+    width:100%;
+}
+#logo{
+    width: 11%;
+    height: 42px;
+    margin-top: 15px;
+    margin-left: 170px;
+}
+nav{
+    margin-left: 30px;
+    min-height: 80px;
+    line-height: 80px;
+    word-spacing: 2px;
+}
+.list{
+    width: 10%; 
+    border: none;
+    font-size: 16px;
+    color: rgb(86, 81, 81);
+}
+.anch1{
+    width: 7%;
+    font-size: 17px;
+    color: rgb(86, 81, 81);
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}

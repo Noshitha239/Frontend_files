@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="Login.html" onsubmit="return form()">
+        <label for="uname">UserName:</label>
+        <input type="text" id="uname" placeholder="Enter the Username"><br><br><br>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" placeholder="Enter the password"><br><br>
+        <!-- <label for="cpass">ConfirmPassword:</label>
+        <input type="password" id="cpass" placeholder="Confirm the password"><br><br> -->
+        <input type="submit" value="submit">
+    </form>
+</body>
+<script>
+    function form() {
+        let name = document.getElementById("uname")
+        let password = document.getElementById("pass")
+        if (name.value.length >= 5 && password.value.length >= 3) {
+            if (name.value === "Noshi" && password.value === "123") {
+                alert("Login successfull")
+                name.style.backgroundColor = "green"
+                return true
+            }
+            else {
+                alert("Invalid")
+                password.style.border = "2px solid red"
+                password.style.boxShadow = "2px 2px red"
+                return false
+            }
+            return true
+        }
+        else {
+            alert("user name should be more than 5")
+            name.style.backgroundColor = "red"
+            return false
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn5VRZFYkjlWV8mvWzl1WOnX0RMg_7EkScAA&usqp=CAU" alt="" onmouseover="change()"
+    onmouseout="change_back()" width="40%" height="400px">
+
+</body>
+<script>
+    image = document.getElementById("img1")
+    function change(){
+        image.src="https://thumbs.dreamstime.com/b/crocus-spring-flowers-24125386.jpg" 
+    }
+    function change_back(){
+        image.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn5VRZFYkjlWV8mvWzl1WOnX0RMg_7EkScAA&usqp=CAU" 
+    }
+    change()
+</script>
+</html>

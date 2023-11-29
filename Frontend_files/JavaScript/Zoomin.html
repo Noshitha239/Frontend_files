@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="submit" onclick="zoomin()">ZOOM IN</button>
+    <img id="img1" src="https://akm-img-a-in.tosshub.com/sites/visualstory/wp/2023/06/flowers-1.jpg" alt="" width="40%"
+        height="400px">
+    <button type="submit" onclick="zoomout()">ZOOM OUT</button>
+</body>
+<script>
+    id = 0
+    width = 200
+    function zoom_out() {
+        image = document.getElementById("img1")
+      
+        if ( width>=200) {
+            width =  width - 2
+            image.width =  width
+            console.log(width)
+        }
+        else{
+            clearInterval(id)
+        }
+    }
+    function zoom_in(){
+        image = document.getElementById("img1")
+     
+        if (width <250) {
+            width = width + 2
+            image.width = width
+            console.log(width)
+        }
+        else{
+            clearInterval(id)
+        }
+    }
+
+    function zoomout() {
+        id = setInterval(zoom_out, 3000)
+    }
+    function zoomin() {
+        id = setInterval(zoom_in, 3000)
+    }
+</script>
+
+</html>

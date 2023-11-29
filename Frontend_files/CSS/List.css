@@ -1,0 +1,42 @@
+.c1{
+    color: brown;
+    font-size: larger;
+   
+}
+.c2{
+    list-style-type: circle;
+    /*list-style-image: url('a1.png');*/
+    list-style-position: outside;
+    background-image:url('a1.png') ;
+     
+    
+}
+.c3{
+    list-style-image: url('a2.png');
+}
+body{
+    background-image: linear-gradient(90deg,pink,rgba(0,0,255,0.6));
+
+}
+li{
+    line-height: 40px;
+}
+h1{
+    text-align: center;
+}
+hr{
+    border: 2px solid black;
+}
+.o{
+    list-style-type: disc;
+}
+.d{
+    list-style-type: square;
+}
+.s{
+    list-style-type: lower-alpha;
+
+}
+.v{
+    list-style-image: url('v.png');
+}

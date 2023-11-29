@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="validating()">
+        <select name="" id="continent">
+            <option value="asia">ASIA</option> 
+            <option value="africa">AFRICA</option>
+            <option value="europe">EUROPE</option>
+            <option value="Astralia">ASTRALIA</option>
+            <option value="southamerica">SOUTH AMERICA</option>
+            <option value="northamerica">NORTH AMERICA</option>
+            <option value="usa">ANTARTICA</option>
+        </select><br><br>
+        <input type="Submit" value="Submit">
+    </form>
+</body>
+<script>
+   function validating(){
+       select=document.getElementById("continent")
+       //ref.options[ref.selectedIndex].value
+       result=select.options[select.selectedIndex].value
+       alert(`Selected option is: ${result}`)
+   }
+</script>
+</html>

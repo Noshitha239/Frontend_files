@@ -1,0 +1,20 @@
+/*h2{
+    color:red;
+}*/
+#subheading1{
+    color: brown;
+}
+#subheading2{
+    color:blue;
+}
+.classsubheading{
+    text-align: center;
+    text-decoration: 2px underline;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-variant: small-caps;
+    font-stretch: ultra-expanded;
+    font-weight: 900;
+
+
+}

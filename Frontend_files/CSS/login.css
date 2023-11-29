@@ -1,0 +1,31 @@
+body {
+    background-image: linear-gradient(90deg,rgba(0,0,255,0.3),pink);
+}
+div{
+    width:150%;
+    height:400px;
+    float: left;
+    margin-top:-80px;
+    margin-left:  100px;
+    border-radius: 20px;
+}
+#c1{
+    width:50%;height:100px;float: left;margin-top:1px;margin-left:  1px;border-radius: 20px;
+}
+p{
+    font-size: 20px;margin-top: 90px;margin-left: 20px;
+}
+#c2{
+    margin-left: 20px;margin-top: -10px;color: black;
+}
+nav{
+    margin-top: -5px;
+    height:40px;
+    line-height: 40px;
+    min-height: 40px;
+    border:2px solid black;
+    background-image:linear-gradient(90deg,rgba(16, 22, 24, 0.3),rgb(221, 102, 199));
+    text-align: center;
+    word-spacing: 30px;
+    padding: 20px;
+}

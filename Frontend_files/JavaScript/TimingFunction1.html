@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="submit" onclick="timming_function()">TIME IN</button>
+    <p id="para1"></p>
+    <button type="submit" onclick="timming_clear_function()">TIME OUT</button>
+</body>
+<script>
+    time =0
+    id = 0
+    function timming_function(){
+        id = setInterval(() =>{
+            console.log(time)
+            time+=5
+           let para=document.getElementById("para1")
+           para.innerHTML=`${time} seconds`
+        },5000);
+    }
+    function timming_clear_function(){
+        clearInterval(id)
+    }
+</script>
+</html>

@@ -1,0 +1,10 @@
+hr + p{
+    border:2px solid blue;
+    background-color: black;
+    color:aliceblue;
+}
+hr ~ p{
+    border:2px solid blue;
+    background-color: black;
+    color:aliceblue;
+}

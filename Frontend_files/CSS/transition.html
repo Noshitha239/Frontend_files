@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            border: 2px solid red;
+            background-color: black;
+            color: brown;
+            transform: rotateZ(0deg);
+            /*transform: perspective(100px) rotate(0deg);*/
+            height:400px;
+            width:400px;
+            transition-property: transform,background-color,color,border,background-image;
+            transition-duration: 2s,2s,2s,2s;
+            transition-timing-function: linear, linear,linear;
+            transition-delay: 2s,2s,2s,4s;
+        }
+        #div1:hover{
+            transform: rotateZ(90deg);
+            color: brown;
+            border:10px solid black;
+            background-image: url('n.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+    <h2>Basic Animations</h2>
+</div>
+</body>
+</html>

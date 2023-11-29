@@ -1,0 +1,13 @@
+nav{
+    min-height: 40px;
+    line-height: 40px;
+    border:2px solid ;
+    text-align: center;
+    /*padding: 30px;*/
+    background-color: black;
+}
+a{
+    text-decoration:none ;
+    padding: 40px;
+    color: white;
+}

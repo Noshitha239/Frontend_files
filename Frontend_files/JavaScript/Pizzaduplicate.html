@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+//-----------------------pizza section----------------------
+    function pizza() {
+        let a = Number(prompt("Select what type of pizza\n1.Veg\n2.Non Veg"))
+        if (a == 1) {
+            veg()
+        }
+        else {
+            Non_veg()
+        }
+    }
+//-----------------------pizza veg section----------------------
+    function veg() {
+        // alert("Your selected Veg Pizza.");
+        let v = Number(prompt("Select what type of Veg pizza do you want\n1.Paneer special\n2.Spicy Mexican\n3.Vegetarian Special\n4.Four Cheese Special"))
+        if (v == 1) {
+            PaneerPizza()
+        }
+        else if (v == 2) {
+            SpicyPizza()
+        }
+        else if (v == 3) {
+            Vegetarian()
+        }
+        else {
+            CheesePizza()
+        }
+    }
+//----------Paneerpizza-----------------
+    function PaneerPizza() {
+        // alert("Your selected PannerSpecial Pizza.")
+        let p = Number(prompt("Do you want extra toppings\n1.yes\n2.No"))
+        if (p == 1) {
+            // alert("Extra Toppings added")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  200\nExtra Toppings  :  added\n--------------\nTotal  :  200\n--------------`)
+            let p1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (p1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  Not added\n--------------\nTotal  :  250\n--------------`)
+                let c3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (c3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+           
+        }
+        else {
+            let p2 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (p2 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  180\nExtra Toppings  :  Not added\n--------------\nTotal  :  180\n--------------`)
+                let p3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (p3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for Visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+    }
+    
+//----------Spicypizza-----------------
+    function SpicyPizza() {
+        // alert("Your selected Spicy Pizza.")
+        let s = Number(prompt("Do you want extra toppings\n1.yes\n2.No"))
+        if (s == 1) {
+            // alert("Extra Toppings added")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  added\n--------------\nTotal  :  250\n--------------`)
+            let s1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (s1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  Not added\n--------------\nTotal  :  250\n--------------`)
+                let c3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (c3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+           
+        }
+        else {
+            let s2 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (s2 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  200\nExtra Toppings  :  Not added\n--------------\nTotal  :  200\n--------------`)
+                let s3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (s3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+    }
+//----------VegetarianPizza-----------------
+function VegetarianPizza() {
+        // alert("Your selected Vegetarian Pizza.")
+        let veg = Number(prompt("Do you want extra toppings\n1.yes\n2.No"))
+        if (veg == 1) {
+            // alert("Extra Toppings added")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  added\n--------------\nTotal  :  250\n--------------`)
+            let veg1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (veg1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  Not added\n--------------\nTotal  :  250\n--------------`)
+                let c3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (c3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+            
+        }
+        else{
+            let veg2 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (veg2 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  200\nExtra Toppings  :  Not added\n--------------\nTotal  :  200\n--------------`)
+                let veg3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (veg3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+    }
+//----------CheesePizza--------------------
+function CheesePizza() {
+        // alert("Your selected Ceese Pizza.")
+        let ve = Number(prompt("Do you want extra toppings\n1.yes\n2.No"))
+        if (ve == 1) {
+            // alert("Extra Toppings added")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  200\nExtra Toppings  :  added\n--------------\nTotal  :  200\n--------------`)
+            let ve1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (ve1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  Not added\n--------------\nTotal  :  250\n--------------`)
+                let c3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (c3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+          
+        }
+        else {
+            let ve2 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (ve2 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  180\nExtra Toppings  :  Not added\n--------------\nTotal  :  180\n--------------`)
+                let ve3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (ve3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+    }
+//-------------Non-veg section----------------
+    function Non_veg() {
+        // alert("Your selected Non_Veg Pizza.");
+        let n = Number(prompt("Select what type of Non_Veg pizza do you want\n1.Chicken Golden Delight\n2.Chicken Dominator\n3.Pepper Barbecue Chicken\n4.Keema Do Pyaza"))
+        if (n == 1) {
+            Chicken_Golden_Delight()
+        }
+        else if (n == 2) {
+            Chicken_Dominator()
+        }
+        else if (n == 3) {
+            Pepper_Barbecue_Chicken()
+        }
+        else {
+            Keema_Do_Pyaza()
+        }
+    }
+//-------------Chicken_Golden_Delight--------------
+    function Chicken_Golden_Delight() {
+        // alert("Your selected Chicken_Golden_Delight Pizza.")
+        let c = Number(prompt("Do you want extra toppings\n1.yes\n2.No"))
+        if (c == 1) {
+            // alert("Extra Toppings added")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  300\nExtra Toppings  :  added\n--------------\nTotal  :  300\n--------------`)
+            let c1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (c1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  Not added\n--------------\nTotal  :  250\n--------------`)
+                let c3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (c3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+          
+        }
+        else {
+            let c2 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (c2 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  Not added\n--------------\nTotal  :  250\n--------------`)
+                let c3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (c3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+    }
+    
+//----------Chicken_Dominator-----------------
+function Chicken_Dominator() {
+        // alert("Your selected Chicken_Dominator Pizza.")
+        let d = Number(prompt("Do you want extra toppings\n1.yes\n2.No"))
+        if (d == 1) {
+            // alert("Extra Toppings added")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  320\nExtra Toppings  :  added\n--------------\nTotal  :  320\n--------------`)
+            let d1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (d1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  Not added\n--------------\nTotal  :  250\n--------------`)
+                let c3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (c3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+            
+        }
+        else {
+            let d2 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (d2 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  290\nExtra Toppings  :  Not added\n--------------\nTotal  :  290\n--------------`)
+                let d3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (d3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+            }
+        }
+    } 
+//----------Pepper_Barbecue_Chicken-----------------
+function Pepper_Barbecue_Chicken() {
+        // alert("Your selected Pepper_Barbecue_Chicken Pizza.")
+        let pe = Number(prompt("Do you want extra toppings\n1.yes\n2.No"))
+        if (pe == 1) {
+            alert("Extra Toppings added")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  320\nExtra Toppings  :  added\n--------------\nTotal  :  320\n--------------`)
+            let pe1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (pe1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  Not added\n--------------\nTotal  :  250\n--------------`)
+                let c3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (c3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+           
+        }
+        else {
+            let pe2 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (pe2 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  290\nExtra Toppings  :  Not added\n--------------\nTotal  :  290\n--------------`)
+                let pe3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (pe3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+            }
+        }
+    } 
+//---------- Keema_Do_Pyaza--------------------
+function  Keema_Do_Pyaza() {
+        // alert("Your selected  Keema_Do_Pyaza Pizza.")
+        let k = Number(prompt("Do you want extra toppings\n1.yes\n2.No"))
+        if (k == 1) {
+            // alert("Extra Toppings added")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  320\nExtra Toppings  :  added\n--------------\nTotal  :  320\n--------------`)
+            let k1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (k1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  250\nExtra Toppings  :  Not added\n--------------\nTotal  :  250\n--------------`)
+                let c3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (c3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+         
+        }
+        else {
+            let k2 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (k2 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  290\nExtra Toppings  :  Not added\n--------------\nTotal  :  290\n--------------`)
+                let k3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (k3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+                else{
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+            }
+        }
+    } 
+ //-----------------------iceCreams section----------------------
+ function iceCreams() {
+        let i = Number(prompt("Select what type of Ice Cream do you want\n1.Soft Serve\n2.Sorbet\n3.Kulfi\n4.Ice Popsicle"))
+        if (i == 1) {
+            Soft_Serve()
+        }
+        else if (i == 2) {
+            Sorbet()
+        }
+        else if (i == 3) {
+            Kulfi()
+        }
+        else {
+            Ice_Popsicle()
+        }
+    }
+//-----------------------Soft_Serve section----------------------
+    function Soft_Serve() {
+        // alert("Your selected Soft_Serve");
+        let ss = Number(prompt("Select what type of flavour do you want\n1.Black Raspberry\n2.Caramel\n3.Marshmallow\n4.Chocolate"))
+        if (ss == 1) {
+            Black_Raspberry()
+        }
+        else if (ss == 2) {
+            Caramel()
+        }
+        else if (ss == 3) {
+            Marshmallow()
+        }
+        else {
+            Chocolate()
+        }
+    }
+    //--------------Black_Raspberry-------------
+    function Black_Raspberry() {
+        // alert("You selected  Black_Raspberry ice cream")
+        let B = Number(prompt("How many ice creams do you want\n1.one\n2.Two\n3.Three\n4.Four"))
+        if (B == 1) {
+            alert("You selected one ice cream.")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  100\n--------------\nTotal  :  100\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  100\n--------------\nTotal  :  100\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+        else if (B == 2) {
+            alert("You selected two ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  2\nPrice  :  200\n--------------\nTotal  :  200\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  2\nPrice  :  200\n--------------\nTotal  :  200\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+            }
+        }
+        else if (B == 3) {
+            alert("You selected three ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  3\nPrice  :  300\n--------------\nTotal  :  300\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  3\nPrice  :  300\n--------------\nTotal  :  300\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+        else if (B == 4) {
+            alert("You selected four ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  4\nPrice  :  400\n--------------\nTotal  :  400\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  4\nPrice  :  400\n--------------\nTotal  :  400\n--------------`)
+                let p3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (p3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+    }
+//-------------- Caramel-------------
+     function  Caramel() {
+        // alert("You selected Caramel ice cream")
+        let B = Number(prompt("How many ice creams do you want\n1.one\n2.Two\n3.Three\n4.Four"))
+        if (B == 1) {
+            alert("You selected one ice cream.")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  100\n--------------\nTotal  :  100\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  100\n--------------\nTotal  :  100\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+        else if (B == 2) {
+            alert("You selected two ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  2\nPrice  :  200\n--------------\nTotal  :  200\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  2\nPrice  :  200\n--------------\nTotal  :  200\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+            }
+        }
+        else if (B == 3) {
+            alert("You selected three ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  3\nPrice  :  300\n--------------\nTotal  :  300\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  3\nPrice  :  300\n--------------\nTotal  :  300\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+        else if (B == 4) {
+            alert("You selected four ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  4\nPrice  :  400\n--------------\nTotal  :  400\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  4\nPrice  :  400\n--------------\nTotal  :  400\n--------------`)
+                let p3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (p3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+    }
+//-------------- Marshmallow-------------
+    function Marshmallow() {
+        // alert("You selected Marshmallow ice cream")
+        let B = Number(prompt("How many ice creams do you want\n1.one\n2.Two\n3.Three\n4.Four"))
+        if (B == 1) {
+            alert("You selected one ice cream.")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  100\n--------------\nTotal  :  100\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  100\n--------------\nTotal  :  100\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+        else if (B == 2) {
+            alert("You selected two ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  2\nPrice  :  200\n--------------\nTotal  :  200\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  2\nPrice  :  200\n--------------\nTotal  :  200\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+            }
+        }
+        else if (B == 3) {
+            alert("You selected three ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  3\nPrice  :  300\n--------------\nTotal  :  300\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  3\nPrice  :  300\n--------------\nTotal  :  300\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+        else if (B == 4) {
+            alert("You selected four ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  4\nPrice  :  400\n--------------\nTotal  :  400\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  4\nPrice  :  400\n--------------\nTotal  :  400\n--------------`)
+                let p3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (p3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+    }
+  //--------------Chocolate-------------
+  function Chocolate() {
+        // alert("You selected Chocolate ice cream")
+        let B = Number(prompt("How many ice creams do you want\n1.one\n2.Two\n3.Three\n4.Four"))
+        if (B == 1) {
+            alert("You selected one ice cream.")
+            alert(`The item details\n--------------\nQuantity  :  1\nPrice  :  100\n--------------\nTotal  :  100\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  1\nPrice  :  100\n--------------\nTotal  :  100\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+        else if (B == 2) {
+            alert("You selected two ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  2\nPrice  :  200\n--------------\nTotal  :  200\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  2\nPrice  :  200\n--------------\nTotal  :  200\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+            }
+        }
+        else if (B == 3) {
+            alert("You selected three ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  3\nPrice  :  300\n--------------\nTotal  :  300\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  3\nPrice  :  300\n--------------\nTotal  :  300\n--------------`)
+                let B3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (B3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+        else if (B == 4) {
+            alert("You selected four ice creams.")
+            alert(`The item details\n--------------\nQuantity  :  4\nPrice  :  400\n--------------\nTotal  :  400\n--------------`)
+            let B1 = Number(prompt("Do you want another items\n1.yes\n2.No"))
+            if (B1 == 1) {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+            else {
+                alert(`Bill\nThe item details\n--------------\nQuantity  :  4\nPrice  :  400\n--------------\nTotal  :  400\n--------------`)
+                let p3 = Number(prompt("Do you want to purchace\n1.yes\n2.No"))
+                if (p3 == 1) {
+                    alert("Thank you for purchace. Visit again.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+
+                }
+                else {
+                    alert("Thank you for visiting.")
+                    let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want\n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                    user_options(Number(options))
+                }
+
+            }
+        }
+    }  
+//---------user_options---------------------
+    function user_options(num1) {
+        if (num1 === 1) {
+            pizza()
+        }
+        else if (num1 === 2) {
+            iceCreams()
+        }
+        else if (num1 === 3) {
+            coolDrinks()
+        }
+        else {
+                let options = prompt("************************Wellcome to Pizza Hut******************** \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+                user_options(Number(options))
+            }
+        }
+
+    
+    let options = prompt("******** Wellcome to Pizza Hut ********* \nSelect What do you want \n1.Pizza .\n2.Ice Creams\n3.Cooldrinks")
+    user_options(Number(options))
+</script>
+</html>
